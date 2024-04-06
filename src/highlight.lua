@@ -11,8 +11,9 @@ syntax.add {
   patterns = {
     { pattern = ';;.*',                                   type = 'comment' },
     { pattern = ';.*',                                    type = 'comment' },
-    { pattern = { '#"', '"', '\\\\' },                    type = 'string' },
-    { pattern = { '"', '"', '\\\\' },                     type = 'string' },
+    { pattern = { '#"', '"', '\\' },                      type = 'string' },
+    { pattern = { '"', '"', '\\' },                       type = 'string' },
+    { pattern = { '"""', '"""', '\\' },                   type = 'string' },
     { pattern = '()Retention%s+()[%a_][%w_/]*',           type = { 'keyword', 'keyword2', 'literal' } },
     { pattern = '():[%a_][%w_/%-]*',                      type = { 'keyword2', 'literal', 'literal' } },
     { pattern = '[%a_][%w_]*()%.()[%a_][%w_/%-]*',        type = { 'keywords', 'literal', 'operator', 'keyword2' } },
@@ -51,4 +52,3 @@ syntax.add {
     ['int']        = 'literal',
   },
 }
-
