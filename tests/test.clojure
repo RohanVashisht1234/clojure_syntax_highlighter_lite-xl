@@ -1,0 +1,5 @@
+(def my-name "Rohan Vashisht")
+(def my-age 18)
+
+(println "Hello! my name is: " my-name)
+(println "And my age is: " my-age)
