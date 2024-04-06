@@ -1,0 +1,12 @@
+{
+    "addons": [
+        {
+            "id": "language_clojure",
+            "version": "0.1",
+            "mod_version": "3",
+            "description": "A syntax highlighter for the Clojure programming language in lite-xl.",
+            "path": "src/highlight.lua"
+        }
+    ]
+}
+

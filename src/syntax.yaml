@@ -62,6 +62,8 @@ keywords:
     - catch
     - Retention
     - Deprecated
+    - if
+    - cond
 
 keywords2:
     - require
