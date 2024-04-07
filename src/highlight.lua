@@ -14,9 +14,9 @@ syntax.add {
     { pattern = { '#"', '"', '\\' },                      type = 'string' },
     { pattern = { '"', '"', '\\' },                       type = 'string' },
     { pattern = { '"""', '"""', '\\' },                   type = 'string' },
-    { pattern = '()Retention%s+()[%a_][%w_/]*',           type = { 'keyword', 'keyword2', 'literal' } },
-    { pattern = '():[%a_][%w_/%-]*',                      type = { 'keyword2', 'literal', 'literal' } },
-    { pattern = '[%a_][%w_]*()%.()[%a_][%w_/%-]*',        type = { 'keywords', 'literal', 'operator', 'keyword2' } },
+    { pattern = 'Retention%s+()[%a_][%w_/]*',             type = { 'keyword', 'literal' } },
+    { pattern = ':[%a_][%w_/%-]*',                        type = { 'keyword2', 'literal' } },
+    { pattern = '[%a_][%w_]*()%.()[%a_][%w_/%-]*',        type = { 'keyword','operator', 'keyword2' } },
     { pattern = "%(()def()%s+()[%a_][%w_%-]*",            type = { "normal", "keyword", "literal", 'literal' } }, -- tested ok
     { pattern = "%(()def[%a_][%w_]*()%s+()[%a_][%w_%-]*", type = { "normal", "keyword", "literal", 'literal' } }, -- tested ok
     { pattern = '%(()require()%s+()[%a_][%w_]*',          type = { 'normal', 'keyword', 'literal', 'literal' } },
